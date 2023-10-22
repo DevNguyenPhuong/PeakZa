@@ -1,0 +1,138 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  gap: 0.5rem;
+  margin: 0rem 2.4rem 9.6rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-3);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery-img:hover {
+  transform: scale(1.08);
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.gallery__item--1 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+}
+
+.gallery__item--2 {
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.gallery-img-2 {
+  object-position: 0rem 0rem;
+}
+
+.gallery__item--3 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.gallery__item--4 {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.gallery__item--5 {
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.gallery__item--6 {
+  grid-column: 8 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.gallery__item--7 {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.gallery__item--8 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.gallery__item--9 {
+  grid-column: 7 / span 1;
+  grid-row: 1 / span 3;
+}
+
+.gallery__item--10 {
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.gallery__item--11 {
+  grid-column: 4 / span 1;
+  grid-row: 6 / span 2;
+}
+
+.gallery__item--12 {
+  grid-column: 6 / span 1;
+  grid-row: 1 / span 3;
+}
+
+.gallery__item--13 {
+  grid-column: 3 / span 1;
+  grid-row: 5 / span 3;
+}
+.gallery-img-13 {
+  object-position: -3.5rem 0rem;
+}
+
+.gallery__item--14 {
+  grid-column: 2 / span 1;
+  grid-row: 5 / span 3;
+}
+.gallery-img-14 {
+  object-position: -1rem 0rem;
+}
+.gallery__item--15 {
+  grid-column: 7 / span 2;
+  grid-row: 6 / span 2;
+}
+
+.gallery__item--16 {
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 2;
+}
+
+.gallery__item--17 {
+  grid-column: 7 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.gallery__item--18 {
+  grid-column: 8 / span 1;
+  grid-row: 3 / span 3;
+}
+
+.gallery__item--19 {
+  grid-column: 6 / span 1;
+  grid-row: 4 / span 4;
+}
+
+.gallery-img-19 {
+  object-position: -4rem 0rem;
+}
+
+.gallery__item--20 {
+  grid-column: 5 / span 1;
+  grid-row: 6 / span 2;
+}

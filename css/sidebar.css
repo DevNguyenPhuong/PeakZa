@@ -1,0 +1,55 @@
+.sidebar {
+  flex: 25;
+  border-radius: var(--border-xl);
+  align-self: flex-start;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 3.2rem;
+  color: var(--zinc-800);
+  margin-right: 2rem;
+  padding: 2.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  box-shadow: var(--shadow-3);
+}
+.sidebar .sidebar-card {
+  padding: 2rem 1.6rem;
+  border-radius: var(--border-xl);
+  box-shadow: var(--shadow-1);
+}
+
+.sidebar-card .icons {
+  justify-content: center;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.sidebar-card ion-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--yellow-500);
+  transition: all 0.5s;
+}
+
+.sidebar-card ion-icon:hover {
+  cursor: pointer;
+  color: var(--yellow-600);
+  transform: translateY(-3px);
+}
+
+.sidebar p {
+  font-size: 1.6rem;
+}
+
+.sidebar .sidebar-card > h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 1.6rem;
+  color: var(--red-600);
+}
+
+iframe {
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+.footer {
+  background: var(--red-100);
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  padding: 6.4rem 7.2rem;
+  color: var(--zinc-700);
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.footer > div > h3 {
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  font-size: 5rem;
+  text-decoration: none;
+  color: var(--red-600);
+  height: auto;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 800;
+}
+
+.footer-logo::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 3px solid var(--red-600);
+  bottom: 60%;
+}
+.footer-contact {
+  flex-basis: 20rem;
+}
+
+.footer-contact a:link,
+.footer-contact a:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+.footer-contact a:hover,
+.footer-contact a:active {
+  color: var(--red-800);
+}

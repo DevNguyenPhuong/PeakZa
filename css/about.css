@@ -1,0 +1,49 @@
+.section-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 8rem;
+  margin-bottom: 6.4rem;
+  align-items: center;
+}
+
+.section-about .about-content {
+  padding-left: 3.6rem;
+  align-self: start;
+}
+
+.about-content h3 {
+  font-size: 3.2rem;
+  color: var(--yellow-400);
+}
+.about-content ul {
+  padding-top: 3rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-content li {
+  font-size: 1.6rem;
+  color: var(--zinc-700);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.about-content li span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--red-800);
+}
+
+.section-about .slide > h1 {
+  font-size: 3.2rem;
+  font-variant: small-caps;
+  color: var(--red-600);
+}
