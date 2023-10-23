@@ -71,6 +71,11 @@ body {
   background-color: var(--red-50);
 }
 
+::selection {
+  color: var(--red-50);
+  background-color: var(--red-600);
+}
+
 *::-webkit-scrollbar {
   height: 0.5rem;
   width: 0.5rem;

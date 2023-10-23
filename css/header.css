@@ -79,18 +79,6 @@
   text-transform: uppercase;
 }
 
-.contact-icon {
-  width: 3.2rem;
-  height: 3.2rem;
-  text-decoration: none;
-  color: var(--red-700);
-  transition: all 0.5s;
-}
-.contact-icon:hover {
-  transform: translateY(-5px);
-  color: var(--red-500);
-}
-
 .header-content {
   display: flex;
   align-items: center;
@@ -184,4 +172,23 @@
 .header-account a > ion-icon:active {
   color: var(--red-500);
   transform: scale(1.2);
+}
+.header-account > a:nth-child(2) {
+  position: relative;
+}
+.header-account > a:nth-child(2)::after {
+  content: "5";
+  font-weight: 700;
+  font-size: 1.4rem;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--yellow-500);
+  color: var(--red-600);
+  border-radius: var(--border-rounded);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -3px;
+  right: -9px;
 }

@@ -12,6 +12,12 @@
   gap: 3rem 3.2rem;
 }
 
+.pizza-section {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0;
+  row-gap: 3.2rem;
+}
+
 .meal {
   width: 32rem;
   box-shadow: var(--shadow-2);
