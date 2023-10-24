@@ -57,7 +57,6 @@
 .slider__btn--left {
   left: 6%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
 }
 
 .slider__btn--right {
