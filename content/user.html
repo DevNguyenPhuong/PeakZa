@@ -22,8 +22,8 @@
     />
     <link rel="manifest" href="../imgs/logo/site.webmanifest" />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../css/game-list.css" />
-    <title>Thanh toán</title>
+    <link rel="stylesheet" href="../css/userPage.css" />
+    <title>Tài khoản</title>
   </head>
   <body>
     <div class="nav">
@@ -65,67 +65,72 @@
         ></a>
       </div>
     </div>
-    <section class="section-form">
-      <div class="form-container">
-        <form action="#" class="form-form">
-          <h3>Thanh toán bằng thẻ</h3>
-          <div class="form-group">
-            <label for="name" class="form-label">Họ và tên</label>
-            <input
-              type="name"
-              class="form-input"
-              placeholder="NGUYEN VAN A"
-              id="name"
-              required
-            />
-          </div>
 
-          <div class="form-group">
-            <label for="cardNumber" class="form-label">Số tài khoản</label>
-            <input
-              type="cardNumber"
-              class="form-input"
-              placeholder="6759 6498 2643 8453"
-              id="cardNumber"
-              required
-            />
-          </div>
+    <div class="back-button">
+      <a href="../index.html" class="btn btn--red btn--medium btn-back"
+        >Quay về màn hình chính</a
+      >
+    </div>
 
-          <div class="form-group">
-            <label for="expired" class="form-label">Ngày hết hạn</label>
-            <input
-              type="expired"
-              class="form-input"
-              placeholder="05 / 445"
-              id="expired"
-              required
-            />
-          </div>
+    <section class="section-user-info">
+      <h1 class="user-info-heading">Thông tin tài khoản</h1>
+      <div class="info-details">
+        <div class="detail-item">
+          <div class="detail-heading">Họ Và tên</div>
+          <div class="detail-content">Nguyễn Văn A</div>
+        </div>
 
-          <div class="form-group">
-            <label for="CVV" class="form-label">CVV</label>
-            <input
-              type="CVV"
-              class="form-input"
-              placeholder="544"
-              id="CVV"
-              required
-            />
+        <div class="detail-item">
+          <div class="detail-heading">Địa chỉ</div>
+          <div class="detail-content">
+            23/4432 Tô Ký, Quận 12, TP Hồ Chí Minh
           </div>
+        </div>
 
-          <div class="form-group">
-            <button class="btn btn-cancel" type="reset">Huỷ</button>
-            <a
-              class="btn btn--medium btn--violet"
-              href="./thanh-toan-nhan-hang.html"
-              style="text-align: center"
-              >Thanh toán khi nhận hàng</a
-            >
-            <button class="btn btn--medium btn--red">Thanh toán</button>
-          </div>
-        </form>
+        <div class="detail-item">
+          <div class="detail-heading">Giới tính</div>
+          <div class="detail-content">Nam</div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-heading">Số điện thoại</div>
+          <div class="detail-content">02156768526</div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-heading">Địa chỉ email</div>
+          <div class="detail-content">ganaad@gmail.com</div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-heading">Quốc tịch</div>
+          <div class="detail-content">Việt Nam</div>
+        </div>
       </div>
     </section>
+
+    <section class="section-user-nav">
+      <h1 class="user-info-heading">Xem chi tiết thông tin</h1>
+      <div class="user-nav-details">
+        <a class="user-nav-item" href="./gio-hang.html">
+          <ion-icon name="cart-outline"></ion-icon>
+          <p>Giỏ hàng</p>
+        </a>
+        <a class="user-nav-item" href="./don-hang.html">
+          <ion-icon name="clipboard-outline"></ion-icon>
+          <p>Đơn hàng</p>
+        </a>
+        <!-- <a class="user-nav-item" href="./tinh-trang-don-hang.html">
+          <ion-icon name="cart-outline"></ion-icon>
+          <p>Tình trạng đơn hàng</p>
+        </a>
+        <a class="user-nav-item" href="./cap-nhap.html">
+          <ion-icon name="settings-outline"></ion-icon>
+          <p>Cập nhập</p>
+        </a> -->
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-account">
         <h3>Tài khoản</h3>
@@ -139,7 +144,7 @@
         <h3>Liên hệ</h3>
         <p>51/12 Tô Ký, quận 12, thành phố Hồ Chí Minh</p>
 
-        <a href="mailto:animax@animax.com">GeezHub@GeezHub.com</a>
+        <a href="mailto:animax@animax.com">PeakZa@PeakZa.com</a>
       </div>
 
       <div class="footer-logo">PeakZa</div>

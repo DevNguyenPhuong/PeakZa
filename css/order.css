@@ -1,0 +1,48 @@
+.section-orders {
+  margin: 6.4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3.2rem;
+}
+.section-orders-heading {
+  font-size: 3.2rem;
+  color: var(--zinc-700);
+  grid-column: 1/-1;
+  text-align: center;
+}
+.section-orders-heading span {
+  color: var(--red-600);
+}
+
+.order-detail {
+  width: 72rem;
+  background: var(--yellow-200);
+  padding: 2rem;
+  border-radius: var(--border-lg);
+  transition: all 0.5s;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.order-detail p span {
+  font-weight: 700;
+}
+
+.detail-id {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--red-600);
+}
+
+.order-detail-row {
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-back {
+  margin-top: 4.2rem;
+  grid-column: 1/-1;
+}
