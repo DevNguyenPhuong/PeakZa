@@ -1,0 +1,20 @@
+.detail-img {
+  display: flex;
+  justify-content: center;
+}
+.detail-img img {
+  width: 80rem;
+  margin-bottom: 8rem;
+}
+
+.detail-content {
+  font-size: 1.8rem;
+  padding: 0 40rem;
+  display: flex;
+  justify-items: center;
+}
+.detail-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.4rem;
+}
