@@ -31,7 +31,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: var(--red-50);
+  background-color: rgba(254, 242, 242, 0.9);
   z-index: 999;
   box-shadow: var(--shadow-2);
 }
@@ -39,6 +39,7 @@
 .sticky .header-account .search {
   background-color: var(--zinc-200);
 }
+
 .sticky .header-account .search-input {
   color: var(--red-600);
 }
