@@ -38,10 +38,9 @@
 
 .sticky .header-account .search {
   background-color: var(--zinc-200);
-  color: var(--red-600);
 }
 .sticky .header-account .search-input {
-  color: var(--zinc-600);
+  color: var(--red-600);
 }
 
 .logo:link,
@@ -150,10 +149,6 @@
   background-color: var(--zinc-800);
   display: flex;
   align-items: center;
-}
-
-.header-account .search.sub-section {
-  background-color: var(--zinc-200);
 }
 
 .header-account .search:hover > .search-input,
