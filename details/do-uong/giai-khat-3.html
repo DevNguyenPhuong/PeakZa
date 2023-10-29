@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../imgs/logo/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../imgs/logo/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../imgs/logo/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../imgs/logo/site.webmanifest" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../css/details.css" />
+
+    <title>Mountain Dew</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="../../index.html" class="logo"> PeakZa </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="../../index.html">Trang chủ</a>
+          </li>
+          <li><a href="../../content/pizza.html">Pizza</a></li>
+          <li><a href="../../content/combo.html">Combo</a></li>
+          <li><a href="../../content/Trang-mieng.html">Tráng miệng</a></li>
+          <li><a href="../../content/Do-uong.html">Đồ uống</a></li>
+          <a
+            class="btn btn--red btn--aminated btn--medium"
+            href="../../content/dang-ki.html"
+            >Tham gia ngay
+          </a>
+        </ul>
+      </nav>
+      <div class="header-account">
+        <div class="search sub-section">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Tìm kiếm"
+            id="search"
+          />
+          <label for="search ">
+            <ion-icon name="search-outline" class="search-btn"></ion-icon>
+          </label>
+        </div>
+        <a href="../../content/gio-hang.html"
+          ><ion-icon name="cart-outline"></ion-icon
+        ></a>
+        <a href="../../content/user.html"
+          ><ion-icon name="person-outline"></ion-icon
+        ></a>
+        <a href="../../content/dang-nhap.html"
+          ><ion-icon name="log-in-outline"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <h1 class="section-header-sub">Mountain Dew</h1>
+    <section class="section-about" id="about">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="../../imgs/drink/drink-soft-3.jpg"
+              data-src="../../imgs/drink/drink-soft-3.jpg"
+              alt="Pizza alla pala"
+              class="lazy-img"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="../../imgs/drink/drink-soft-6.jpg"
+              data-src="../../imgs/drink/drink-soft-6.jpg"
+              alt="Grandma Pie"
+              class="lazy-img"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="../../imgs/drink/drink-soft-5.jpg"
+              data-src="../../imgs/drink/drink-soft-5.jpg"
+              alt="Apizza"
+              class="lazy-img"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="../../imgs/drink/drink-soft-4.jpg"
+              data-src="../../imgs/drink/drink-soft-4.jpg"
+              alt="Pizza fiori di zucca"
+              class="lazy-img"
+            />
+          </div>
+
+          <button class="slider__btn slider__btn--left">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <button class="slider__btn slider__btn--right">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="detail-content">
+          <p>
+            Mountain Dew, cách điệu là Mtn Dew, là một nhãn hiệu nước ngọt có ga
+            do PepsiCo sản xuất và sở hữu. Công thức ban đầu được phát minh vào
+            năm 1940 bởi những người đóng chai nước giải khát tại Tennessee là
+            Barney và Ally Hartman.
+          </p>
+        </div>
+
+        <div class="detail-info">
+          <div class="calories">
+            <ion-icon name="flame-outline"></ion-icon>
+            <span>100</span> calories
+          </div>
+          <div class="rating">
+            <ion-icon name="star-outline"></ion-icon> <span>4.9</span> (24+)
+          </div>
+        </div>
+
+        <div class="detail-action">
+          <div class="quantity">
+            <button class="quantity-btn inc">-</button>
+            <div>1</div>
+            <button class="quantity-btn dec">+</button>
+          </div>
+        </div>
+
+        <div class="coupon-field">
+          <input
+            type="text"
+            class="coupon"
+            placeholder="#FJKF4FFDS5156SDAS56133"
+          />
+          <ion-icon name="ticket-outline"></ion-icon>
+        </div>
+
+        <div class="price">Tổng: 26.000 <span>đ</span></div>
+
+        <div class="detail-btn">
+          <a class="btn btn--medium btn--red btn-meal" href="#"
+            >Thêm vào giỏ <ion-icon name="cart-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-testimonials">
+      <div class="testimonial-heading">Đánh giá của khách hàng</div>
+      <div class="testimonial-box-container">
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-1.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Liam mendes</strong>
+                <span>@liammendes</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Pizza của bạn là một sản phẩm tuyệt vời. Tôi luôn thưởng thức
+              hương vị tươi mát và đậm đà của pizza. phô mai của bạn rất béo và
+              ngậy, sốt của bạn rất thơm và ngon. Tôi không thể chối từ một
+              miếng pizza của bạn.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-2.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Ayesha</strong>
+                <span>@ayesha</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Tôi là một fan hâm mộ của pizza của bạn. Tôi thích cách bạn có
+              nhiều loại pizza, từ truyền thống đến hiện đại. Tôi cũng thích
+              cách bạn có thể kết hợp nhiều nguyên liệu khác nhau để tạo ra
+              những hương vị độc đáo và mới lạ.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-3.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Hannibel</strong>
+                <span>@hannibel</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Tôi có thể cảm nhận được sự chăm sóc và tinh tế của bạn trong từng
+              chi tiết của pizza. Nguyên liệu của bạn luôn được chọn lọc kỹ
+              lưỡng và tươi ngon. Cách làm của bạn luôn đảm bảo vệ sinh và an
+              toàn.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-4.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Rancho</strong>
+                <span>@rancho</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Pizza của bạn là một sản phẩm không thể bỏ qua. Tôi luôn mong chờ
+              những lần đặt hàng pizza từ bạn. Pizza của bạn luôn được giao
+              nhanh chóng và nóng hổi. Giá cả của bạn rất hợp lý và phù hợp với
+              túi tiền của tôi.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-5.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Elysia</strong>
+                <span>@elysia</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Tôi luôn cảm thấy vui vẻ và thoải mái khi ăn pizza của bạn. Pizza
+              của bạn có màu sắc và hình dạng rất đẹp mắt và hấp dẫn. Pizza của
+              bạn là một món ăn lý tưởng cho những dịp đặc biệt hoặc những buổi
+              tiệc vui vẻ.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="../../imgs/profile/avatar-6.jpg" />
+              </div>
+              <div class="name-user">
+                <strong>Theresia</strong>
+                <span>@theresia</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+            </div>
+          </div>
+          <div class="client-comment">
+            <p>
+              Pizza của bạn là một sản phẩm xuất sắc. Tôi luôn tự hào khi giới
+              thiệu pizza của bạn cho bạn bè và người thân của tôi. Pizza của
+              bạn có chất lượng và dịch vụ tốt nhất mà tôi từng biết. Nhân viên
+              của bạn rất nhiệt tình và thân thiện.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-account">
+        <h3>Tài khoản</h3>
+        <p>Tạo tài khoản</p>
+        <p>Đăng nhập</p>
+        <p>Ứng dụng IOS</p>
+        <p>ứng dụng Android</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Liên hệ</h3>
+        <p>51/12 Tô Ký, quận 12, thành phố Hồ Chí Minh</p>
+
+        <a href="mailto:animax@animax.com">GeezHub@GeezHub.com</a>
+      </div>
+
+      <div class="footer-logo">PeakZa</div>
+
+      <div class="footer-company">
+        <h3>Doanh nghiệp</h3>
+        <p>Về chúng tôi</p>
+        <p>Về nghiệp vụ</p>
+        <p>Đồng hành cùng chúng tôi</p>
+        <p>Định hướng</p>
+      </div>
+
+      <div class="footer-resource">
+        <h3>Tài nguyên</h3>
+        <p>Nguồn tài nguyên</p>
+        <p>Trung tâm hỗ trợ</p>
+        <p>Điều khoản & chính sách</p>
+      </div>
+    </footer>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+
+  <script src="../../script.js"></script>
+  <script src="../../javascript/slider.js"></script>
+</html>

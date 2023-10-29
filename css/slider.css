@@ -1,11 +1,5 @@
 /* SLIDER */
 
-.slider-content {
-  flex: 40;
-}
-.slider-container {
-  flex: 20;
-}
 .slider {
   max-width: 100%;
   height: 40rem;
