@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Bài 2 - Lab 1</title>
+    <meta charset="utf-8" />
+    <script src="./bai2.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .info {
+        width: 500px;
+        margin: 200px auto;
+        border: 2px solid orange;
+      }
+      h2 {
+        background-color: red;
+        padding: 10px 0;
+        color: yellow;
+        text-align: center;
+        font-size: 25px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .box {
+        padding: 0 50px;
+        padding-top: 20px;
+      }
+      span {
+        display: inline-block;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <h2>Thông tin cá nhân</h2>
+      <div class="box">
+        <p>
+          <span>Họ tên :</span>
+          <b id="hoten">
+            <script>
+              document.write(hoten);
+            </script>
+          </b>
+        </p>
+        <p>
+          <span>Mã SV :</span>
+          <b id="masv"
+            ><script>
+              document.write(masv);
+            </script></b
+          >
+        </p>
+        <p>
+          <span>Ngày sinh :</span>
+          <b id="ns"></b>
+        </p>
+      </div>
+      <script>
+        document.getElementById("ns").innerHTML = ngaysinh;
+      </script>
+    </div>
+  </body>
+</html>

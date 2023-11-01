@@ -17,7 +17,6 @@
 }
 
 .slide img {
-  /* Only for images that have different size than slide */
   width: 80%;
   height: auto;
   border-radius: var(--border-sm);

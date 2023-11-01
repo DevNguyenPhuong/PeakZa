@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Bài 1 - Lab 1</title>
+    <meta charset="utf-8" />
+    <script>
+      var hoten = "Nguyễn Anh Phượng";
+      var masv = "PS123456";
+      var ngaysinh = "19/11/2003";
+    </script>
+  </head>
+  <body>
+    <h2>Thông tin cá nhân</h2>
+    <p>
+      <span>Họ tên :</span>
+      <b id="hoten">
+        <script>
+          document.write(hoten);
+        </script>
+      </b>
+    </p>
+    <p>
+      <span>Mã SV :</span>
+      <b id="masv"
+        ><script>
+          document.write(masv);
+        </script></b
+      >
+    </p>
+    <p>
+      <span>Ngày sinh :</span>
+      <b id="ns"></b>
+    </p>
+    <script>
+      document.getElementById("ns").innerHTML = ngaysinh;
+    </script>
+  </body>
+</html>
