@@ -199,7 +199,8 @@
   position: relative;
 }
 .header-account > a:nth-child(2)::after {
-  content: "5";
+  position: relative;
+  content: var(--total-items);
   font-weight: 700;
   font-size: 1.4rem;
   position: absolute;

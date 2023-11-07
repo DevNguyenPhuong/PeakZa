@@ -38,9 +38,7 @@
           <li><a href="../../content/combo.html">Combo</a></li>
           <li><a href="../../content/Trang-mieng.html">Tráng miệng</a></li>
           <li><a href="../../content/Do-uong.html">Đồ uống</a></li>
-          <a
-            class="btn btn--red btn--aminated btn--medium"
-            href="../../content/dang-ki.html"
+          <a class="btn btn--red btn--aminated btn--medium btn--show-modal"
             >Tham gia ngay
           </a>
         </ul>
@@ -63,9 +61,6 @@
         <a href="../../content/user.html"
           ><ion-icon name="person-outline"></ion-icon
         ></a>
-        <a href="../../content/dang-nhap.html"
-          ><ion-icon name="log-in-outline"></ion-icon
-        ></a>
       </div>
     </div>
 
@@ -74,39 +69,19 @@
       <div class="slider-container">
         <div class="slider">
           <div class="slide">
-            <img
-              src="../../imgs/pizza/pizza-1.jpg"
-              data-src="../../imgs/pizza/pizza-4.jpg"
-              alt="Pizza alla pala"
-              class="lazy-img"
-            />
+            <img src="../../imgs/pizza/pizza-1.jpg" />
           </div>
 
           <div class="slide">
-            <img
-              src="../../imgs/pizza-today/pizza-today-2.jpg"
-              data-src="../../imgs/pizza-today/pizza-today-2.jpg"
-              alt="Grandma Pie"
-              class="lazy-img"
-            />
+            <img src="../../imgs/pizza-today/pizza-today-2.jpg" />
           </div>
 
           <div class="slide">
-            <img
-              src="../../imgs/pizza-today/pizza-today-3.jpg"
-              data-src="../../imgs/pizza-today/pizza-today-3.jpg"
-              alt="Apizza"
-              class="lazy-img"
-            />
+            <img src="../../imgs/pizza-today/pizza-today-3.jpg" />
           </div>
 
           <div class="slide">
-            <img
-              src="../../imgs/pizza/pizza-4.jpg"
-              data-src="../../imgs/pizza/pizza-4.jpg"
-              alt="Pizza fiori di zucca"
-              class="lazy-img"
-            />
+            <img src="../../imgs/pizza/pizza-4.jpg" />
           </div>
 
           <button class="slider__btn slider__btn--left">
@@ -165,10 +140,10 @@
           <ion-icon name="ticket-outline"></ion-icon>
         </div>
 
-        <div class="price">Tổng: 199.000 <span>đ</span></div>
+        <div class="price">Tổng: <span>199</span>.000đ</div>
 
         <div class="detail-btn">
-          <a class="btn btn--medium btn--red btn-meal" href="#"
+          <a class="btn btn--medium btn--red btn-meal"
             >Thêm vào giỏ <ion-icon name="cart-outline"></ion-icon
           ></a>
         </div>
@@ -353,6 +328,73 @@
         </div>
       </div>
     </section>
+
+    <div class="containerModal modal hidden" id="containerModal">
+      <div class="form-container sign-up-container">
+        <div class="btn--close-modal">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <form action="#" class="form-modal">
+          <h1 class="form-header">Đăng ký</h1>
+          <div class="social-container">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+          <span>hoặc sử dụng email để đăng ký</span>
+          <input type="text" class="input-form-modal" placeholder="Name" />
+          <input type="email" class="input-form-modal" placeholder="Email" />
+          <input
+            type="password"
+            class="input-form-modal"
+            placeholder="Password"
+          />
+          <button class="btn btn--medium btn--red">Đăng ký</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <div class="btn--close-modal">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <form action="#" class="form-modal">
+          <h1 class="form-header">Đăng nhập</h1>
+          <div class="social-container">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div>
+          <span>Hoặc đăng nhập bằng tài khoản của bạn</span>
+          <input type="email" class="input-form-modal" placeholder="Email" />
+          <input
+            type="password"
+            class="input-form-modal"
+            placeholder="Password"
+          />
+
+          <button class="btn btn--medium btn--red">Đăng nhậP</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay-form">
+          <div class="overlay-panel overlay-left">
+            <h1>Chào mừng trở lại !</h1>
+            <p>
+              Để giữ liên lạc với chúng tôi, hãy đăng nhập bằng thông tin cá
+              nhân
+            </p>
+            <button class="ghost" id="leftForm">Đăng nhập</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Xin chào, thực khách !</h1>
+            <p>
+              Nhập thông tin cá nhân của bạn để bắt đầu trải nghiệm ẩm thực !
+            </p>
+            <button class="ghost" id="rightForm">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
 
     <footer class="footer">
       <div class="footer-account">

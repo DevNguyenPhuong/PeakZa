@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var a = prompt("Nhập số a");
+      var b = prompt("Nhập số b");
+      var c = prompt("Nhập số c");
+    </script>
+    <script>
+      var delta = Math.pow(b, 2) - 4 * a * c;
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>GIẢI PHƯƠNG TRÌNH BẬC 2</h3>
+      <script>
+        document.write(a);
+        document.write("x<sup>2</sup> + ");
+        document.write(b);
+        document.write("x + ");
+        document.write(c);
+        document.write(" = 0");
+      </script>
+      <script>
+        if (delta < 0) {
+          document.write("<p>Phương trình vô nghiệm</p>");
+        } else if (delta == 0) {
+          var x0 = -b / (2 * a);
+          document.write("<p>phương trình có nghiệm kép x0=" + x0 + "</p>");
+        } else {
+          var x1 = -b + Math.sqrt(delta) / (2 * a);
+          var x2 = -b - Math.sqrt(delta) / (2 * a);
+          document.write("<p>Phương trình có 2 nghiệm: </p>");
+          document.write("<p>x1= " + x1 + "</p>");
+          document.write("<p>x2= " + x2 + "</p>");
+        }
+      </script>
+    </div>
+  </body>
+</html>

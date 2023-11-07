@@ -50,6 +50,7 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   --shadow-down: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   --shadow-focus: 0 0 0 4px var(--red-400);
+  --total-items: "";
 }
 
 *,
@@ -94,6 +95,10 @@ body {
 
 *::-webkit-scrollbar-thumb:hover {
   background-color: var(--red-700);
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .section-header {

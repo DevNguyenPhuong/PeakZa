@@ -1,0 +1,66 @@
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <style>
+    .container {
+      width: 1440px;
+      margin: auto;
+      border: 1px solid darkgray;
+    }
+    header {
+      background: darkolivegreen;
+      height: 120px;
+      position: relative;
+    }
+    main {
+      background: darkseagreen;
+      min-height: 400px;
+    }
+    footer {
+      background: darkslategray;
+      height: 100px;
+    }
+    #chao {
+      color: deeppink;
+      font-weight: bold;
+      font-style: italic;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
+    p {
+      text-align: center;
+      color: aqua;
+    }
+    p span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="chao"></div>
+      <script>
+        var n = new Date();
+        var gio = n.getHours();
+        if (gio < 12) document.write("Chào buổi sáng");
+        else document.write("Chào buổi chiều");
+      </script>
+    </header>
+    <main>
+      <script>
+        var a = prompt("JAVASCRIPT CÓ THỂ LÀM GÌ?");
+        document.write(a);
+      </script>
+    </main>
+    <footer>
+      <script>
+        var ten = prompt("Tên");
+        document.write("<p>" + "<span>Họ tên</span>:" + ten + "</p>");
+        var email = prompt("Email");
+        document.write("<p>" + "<span>Email</span>:" + email + "</p>");
+      </script>
+    </footer>
+  </div>
+</body>
