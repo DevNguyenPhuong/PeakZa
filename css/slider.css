@@ -65,6 +65,17 @@
   transform: translateX(-50%);
   display: flex;
 }
+.text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+.text span {
+  color: var(--red-500);
+  font-weight: 600;
+}
 
 .dots__dot {
   border: none;

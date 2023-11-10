@@ -59,6 +59,10 @@
             ><ion-icon name="cart-outline"></ion-icon
           ></a>
 
+          <a href="./content/mat-hang.html">
+            <ion-icon name="bag-outline"></ion-icon>
+          </a>
+
           <a href="./content/user.html"
             ><ion-icon name="person-outline"></ion-icon
           ></a>
@@ -371,17 +375,97 @@
 
           <div class="slide">
             <h1>Grandma Pie</h1>
-            <img src="./imgs/pizza/pizza-2.jpg" alt="Grandma Pie" />
+            <img src="./imgs/pizza/pizza-2.jpg" />
           </div>
 
           <div class="slide">
             <h1>Apizza</h1>
-            <img src="./imgs/pizza/pizza-3.jpg" alt="Apizza" />
+            <img src="./imgs/pizza/pizza-3.jpg" />
           </div>
 
           <div class="slide">
             <h1>Pizza fiori di zucca</h1>
-            <img src="./imgs/pizza/pizza-4.jpg" alt="Pizza fiori di zucca" />
+            <img src="./imgs/pizza/pizza-4.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Tomato Pie</h1>
+            <img src="./imgs/pizza/pizza-5.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Detroit-Style Pizza</h1>
+            <img src="./imgs/pizza/pizza-2.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Garlic fingers</h1>
+            <img src="./imgs/pizza/pizza-7.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pesto Genovese</h1>
+            <img src="./imgs/pizza/pizza-8.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Fugazza</h1>
+            <img src="./imgs/pizza/pizza-9.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Grilled Pizza</h1>
+            <img src="./imgs/pizza/pizza-10.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Stuffed Pizza</h1>
+            <img src="./imgs/pizza/pizza-1.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Prosciutto e funghi</h1>
+            <img src="./imgs/pizza/pizza-12.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza vegetariana</h1>
+            <img src="./imgs/pizza/pizza-13.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza al padellino</h1>
+            <img src="./imgs/pizza/pizza-14.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza carbonara</h1>
+            <img src="./imgs/pizza/pizza-15.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>California-Style Pizza</h1>
+            <img src="./imgs/pizza/pizza-16.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza primavera</h1>
+            <img src="./imgs/pizza/pizza-20.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza prosciutto</h1>
+            <img src="./imgs/pizza/pizza-15.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizzette</h1>
+            <img src="./imgs/pizza/pizza-19.jpg" />
+          </div>
+
+          <div class="slide">
+            <h1>Pizza al taglio</h1>
+            <img src="./imgs/pizza/pizza-20.jpg" />
           </div>
 
           <button class="slider__btn slider__btn--left">
@@ -391,7 +475,7 @@
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </button>
 
-          <div class="dots"></div>
+          <div class="text"></div>
         </div>
       </div>
     </section>
@@ -540,111 +624,11 @@
         </figure>
       </div>
     </section>
-
-    <div class="containerModal modal hidden" id="containerModal">
-      <div class="form-container sign-up-container">
-        <div class="btn--close-modal">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
-        <form action="#" class="form-modal">
-          <h1 class="form-header">Đăng ký</h1>
-          <div class="social-container">
-            <ion-icon name="logo-google"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </div>
-          <span>hoặc sử dụng email để đăng ký</span>
-          <input type="text" class="input-form-modal" placeholder="Name" />
-          <input type="email" class="input-form-modal" placeholder="Email" />
-          <input
-            type="password"
-            class="input-form-modal"
-            placeholder="Password"
-          />
-          <button class="btn btn--medium btn--red">Đăng ký</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <div class="btn--close-modal">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
-        <form action="#" class="form-modal">
-          <h1 class="form-header">Đăng nhập</h1>
-          <div class="social-container">
-            <ion-icon name="logo-google"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </div>
-          <span>Hoặc đăng nhập bằng tài khoản của bạn</span>
-          <input type="email" class="input-form-modal" placeholder="Email" />
-          <input
-            type="password"
-            class="input-form-modal"
-            placeholder="Password"
-          />
-
-          <button class="btn btn--medium btn--red">Đăng nhậP</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay-form">
-          <div class="overlay-panel overlay-left">
-            <h1>Chào mừng trở lại !</h1>
-            <p>
-              Để giữ liên lạc với chúng tôi, hãy đăng nhập bằng thông tin cá
-              nhân
-            </p>
-            <button class="ghost" id="leftForm">Đăng nhập</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Xin chào, thực khách !</h1>
-            <p>
-              Nhập thông tin cá nhân của bạn để bắt đầu trải nghiệm ẩm thực !
-            </p>
-            <button class="ghost" id="rightForm">Đăng ký</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="overlay hidden"></div>
-    <footer class="footer">
-      <div class="footer-account">
-        <h3>Tài khoản</h3>
-        <p>Tạo tài khoản</p>
-        <p>Đăng nhập</p>
-        <p>Ứng dụng IOS</p>
-        <p>ứng dụng Android</p>
-      </div>
-
-      <div class="footer-contact">
-        <h3>Liên hệ</h3>
-        <p>51/12 Tô Ký, quận 12, thành phố Hồ Chí Minh</p>
-
-        <a href="mailto:animax@animax.com">PeakZa@PeakZa.com</a>
-      </div>
-
-      <div class="footer-logo">PeakZa</div>
-
-      <div class="footer-company">
-        <h3>Doanh nghiệp</h3>
-        <p>Về chúng tôi</p>
-        <p>Về nghiệp vụ</p>
-        <p>Đồng hành cùng chúng tôi</p>
-        <p>Định hướng</p>
-      </div>
-
-      <div class="footer-resource">
-        <h3>Tài nguyên</h3>
-        <p>Nguồn tài nguyên</p>
-        <p>Trung tâm hỗ trợ</p>
-        <p>Điều khoản & chính sách</p>
-      </div>
-    </footer>
   </body>
   <script
     type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
   ></script>
-  <script src="./script.js"></script>
-  <script src="./javascript/slider.js"></script>
+  <script src="./script.js" type="module"></script>
+  <script src="./javascript/special-slider.js"></script>
 </html>

@@ -1,0 +1,47 @@
+form {
+  width: 600px;
+  margin: 100px auto;
+  border: 2px solid darkslategray;
+  box-shadow: 2px 2px 1px darkcyan;
+  border-radius: 1.2em;
+  transform: rotate(-10deg);
+}
+
+label {
+  width: 120px;
+  display: inline-block;
+}
+
+p,
+h2 {
+  margin-left: 15px;
+}
+
+input[id],
+select {
+  padding: 8px;
+  width: 420px;
+  background-color: salmon;
+  border: none;
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  border: none;
+  background-color: darkgoldenrod;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 0 5px 0;
+  background-color: darkslategrey;
+  padding: 8px 0;
+  color: white;
+}
+
+#kq {
+  text-align: center;
+  color: darkblue;
+  font-weight: 800;
+}

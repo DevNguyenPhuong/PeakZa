@@ -18,18 +18,19 @@
   transform: translate(-50%, -50%);
   z-index: 10000;
   transition: all 0.5s;
-  width: 60%;
+  width: 90%;
   border-radius: var(--border-lg);
 }
 
 .containerModal {
   background-color: var(--red-50);
   overflow: hidden;
-  min-height: 52rem;
+  min-height: 70rem;
   font-size: 1.6rem;
 }
 .btn--close-modal:nth-of-type(1) {
   border: none;
+  height: 1rem;
   text-align: right;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -68,13 +69,13 @@
   text-align: center;
   padding-bottom: 2rem;
 }
-.form-modal span {
+.form-modal > span {
   font-size: 1.2rem;
   margin-top: 2rem;
   color: var(--zinc-600);
 }
 .form-header {
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--red-600);
@@ -103,14 +104,15 @@
 .input-form-modal {
   border: none;
   padding: 1.2rem 1.5rem;
-  margin: 1.2rem 0;
-  width: 100%;
+  width: 60%;
+  height: 4rem;
   box-shadow: var(--shadow-1);
   border-bottom: 3px solid transparent;
   transition: all 0.3s;
   border-radius: var(--border-md);
   font-size: 1.6rem;
 }
+
 .form-input {
   padding: 1.5rem 2rem;
   background-color: var(--red-50);
@@ -128,6 +130,7 @@
 }
 
 .sign-in-container {
+  gap: 15rem;
   left: 0;
   width: 50%;
   z-index: 2;
@@ -142,6 +145,7 @@
   width: 50%;
   opacity: 0;
   z-index: 1;
+  gap: 0;
 }
 
 .containerModal.right-panel-active .sign-up-container {
@@ -234,4 +238,289 @@ button.ghost {
 button.ghost:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.input-group:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.input-group > p {
+  color: rgba(220, 38, 38, 0.7);
+  width: 20rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 0.8rem;
+}
+
+/* RATIO BUTTON */
+.input-group > label {
+  width: 10rem;
+}
+
+.input-group > label,
+.gender-ratio {
+  text-align: left;
+  color: var(--zinc-600);
+  font-weight: 600;
+  padding-right: 0.8rem;
+}
+
+.gender-ratio {
+  margin-top: 1rem;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.gender-ratio .gender-ratio-error {
+  align-self: center;
+}
+
+.form__radio-group {
+  width: 23%;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__radio-label > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--zinc-600);
+}
+
+.form__radio-button {
+  height: 2.2rem;
+  width: 2.2rem;
+  border: 3px solid var(--red-500);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--red-600);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+
+.input-group-ratio {
+  padding-left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.gender-ratio-error {
+  align-self: flex-start;
+  color: rgba(220, 38, 38, 0.7);
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* CHECK BOX */
+/* Customize the label (the container) */
+.checkboxes {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.6rem;
+  padding: 0.5rem;
+  border-radius: var(--border-lg);
+}
+
+.checkbox-container {
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  height: 2rem;
+  width: 2rem;
+  border-radius: var(--border-rounded);
+  border: 1px solid var(--red-500);
+  position: relative;
+  transition: all 0.5s;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: var(--red-500);
+}
+
+/* When the checkbox is checked, add a background */
+.checkbox-container input:checked ~ .checkmark {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--red-500);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark::after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* CUSTOM SELECT INPUT */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected::after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active::after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-form-select {
+  border: none;
+  padding: 0.2rem 1.5rem;
+  align-self: flex-start;
+  box-shadow: var(--shadow-1);
+  border: 2px solid var(--red-500);
+
+  transition: all 0.3s;
+  border-radius: var(--border-md);
+  font-size: 1.6rem;
+  color: var(--zinc-700);
+}
+.input-form-select:hover {
+  cursor: pointer;
+}
+.input-form-select:focus {
+  outline: none;
+}
+
+/* COMMENT */
+.comment {
+  align-self: flex-start;
+  color: var(--zinc-700);
+  font-weight: 600;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  border: 2px solid var(--red-500);
+}
+.comment:focus {
+  outline: none;
+}
+.input-group-ratio-gender {
+  padding: 0.5rem;
+  border-radius: var(--border-lg);
+}
+
+.login-btn {
+  align-self: flex-start;
+  margin-left: 16rem;
 }

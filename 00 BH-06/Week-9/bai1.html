@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>THẾ GIỚI ĐỘNG VẬT ĐÁNG YÊU</h3>
+    <div class="container">
+      <img src="../images/0.jpg" id="anh" />
+      <div class="btn_container">
+        <button onclick="first()"><<</button>
+        <button onclick="prev()"><</button>
+        <button onclick="next()">></button>
+        <button onclick="last()">>></button>
+      </div>
+    </div>
+    <script>
+      var images = [];
+      var index = 0;
+      var sohinh = 9;
+      for (var i = 0; i < sohinh; i++) {
+        images[i] = new Image();
+        images[i].src = "../images/" + i + ".jpg";
+      }
+    </script>
+
+    <script>
+      function first() {
+        index = 0;
+        var anh = document.getElementById("anh");
+        anh.src = images[index].src;
+      }
+
+      function last() {
+        index = images.length - 1;
+        var anh = document.getElementById("anh");
+        anh.src = images[index].src;
+      }
+
+      function next() {
+        index++;
+        if (index >= images.length) index = 0;
+        var anh = document.getElementById("anh");
+        anh.src = images[index].src;
+        // setTimeout(" ", 1000);
+      }
+
+      function prev() {
+        index--;
+        if (index < images.length) index = images.length - 1;
+        var anh = document.getElementById("anh");
+        anh.src = images[index].src;
+        // setTimeout(" ", 1000);
+      }
+    </script>
+  </body>
+</html>

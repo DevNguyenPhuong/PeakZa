@@ -1,0 +1,135 @@
+.product-heading {
+  margin-top: 12rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--red-600);
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.product-price-container {
+  width: 20rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.product-price {
+  width: 12rem;
+  margin-bottom: 1.2rem;
+}
+
+.products-container {
+  width: 84rem;
+  padding: 1.2rem 2rem;
+  margin: 0 auto;
+  box-shadow: var(--shadow-3);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6.4rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--zinc-700);
+}
+
+.table-line {
+  display: grid;
+  grid-template-columns: 5rem 1fr 10rem 20rem 20rem;
+  height: 4.8rem;
+}
+.table-line:nth-of-type(even) {
+  background-color: var(--red-400);
+  color: var(--zinc-100);
+}
+
+.table-line:nth-of-type(1) {
+  border-top: 2px solid var(--red-300);
+  font-weight: 700;
+  color: var(--zinc-700);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.table-line .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #fff;
+}
+
+.table-line .item:nth-of-type(1) {
+  border-left: 2px solid var(--red-400);
+}
+
+.table-line:nth-of-type(odd) .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid var(--red-200);
+}
+
+.table-line .item:last-of-type {
+  border-right: 2px solid var(--red-50);
+}
+
+.table-line.last-line {
+  grid-template-columns: 1fr 20rem;
+}
+.table-line .item .choiseBtn {
+  width: 60%;
+  height: 60%;
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.table-line:nth-of-type(odd) .item .choiseBtn {
+  border: 2px solid var(--red-300);
+}
+
+.table-line .item .choiseBtn:hover {
+  cursor: pointer;
+  background-color: var(--red-200);
+}
+
+.button-checked::after {
+  content: "";
+  width: 70%;
+  height: 70%;
+  border-radius: 6px;
+  background-color: var(--red-500);
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.quantity-field {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-quantity {
+  width: 7rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: var(--border-lg);
+  padding: 1rem;
+}
+.input-quantity:focus {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+.quantity-btn {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  color: var(--red-500);
+  background-color: var(--red-50);
+  border-radius: var(--border-rounded);
+  font-size: 2.6rem;
+  transition: all 0.3s;
+}
+.quantity-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
