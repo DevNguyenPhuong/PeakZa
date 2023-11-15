@@ -34,38 +34,31 @@
 
 .table-line {
   display: grid;
-  grid-template-columns: 5rem 1fr 10rem 20rem 20rem;
-  height: 4.8rem;
-}
-.table-line:nth-of-type(even) {
-  background-color: var(--red-400);
-  color: var(--zinc-100);
+  grid-template-columns: 5.6rem 1fr 10rem 20rem 20rem;
+  height: 5.6rem;
+  border-bottom: 2px solid var(--red-400);
+  border-right: 2px solid var(--red-400);
+  border-left: 2px solid var(--red-400);
 }
 
 .table-line:nth-of-type(1) {
-  border-top: 2px solid var(--red-300);
   font-weight: 700;
   color: var(--zinc-700);
   font-size: 1.6rem;
   text-transform: uppercase;
+  border-top: 2px solid var(--red-400);
+}
+
+.table-line:last-of-type {
+  color: var(--red-700);
+  font-weight: 700;
 }
 
 .table-line .item {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 2px solid #fff;
-}
-
-.table-line .item:nth-of-type(1) {
-  border-left: 2px solid var(--red-400);
-}
-
-.table-line:nth-of-type(odd) .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 2px solid var(--red-200);
+  border-right: 2px solid var(--red-400);
 }
 
 .table-line .item:last-of-type {
@@ -82,15 +75,12 @@
   border-radius: 8px;
   position: relative;
   transition: all 0.5s;
-}
-
-.table-line:nth-of-type(odd) .item .choiseBtn {
-  border: 2px solid var(--red-300);
+  border: 2px solid var(--red-500);
 }
 
 .table-line .item .choiseBtn:hover {
   cursor: pointer;
-  background-color: var(--red-200);
+  transform: scale(1.05);
 }
 
 .button-checked::after {
@@ -105,7 +95,7 @@
 
 .quantity-field {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .input-quantity {
@@ -114,22 +104,41 @@
   border: none;
   border-radius: var(--border-lg);
   padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--red-700);
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--red-100);
 }
+
 .input-quantity:focus {
   outline: none;
   box-shadow: var(--shadow-focus);
 }
+
+.input-quantity:disabled {
+  cursor: not-allowed;
+}
+
 .quantity-btn {
   width: 3rem;
   height: 3rem;
   border: none;
-  color: var(--red-500);
-  background-color: var(--red-50);
+  color: var(--red-50);
+  background-color: var(--red-500);
   border-radius: var(--border-rounded);
   font-size: 2.6rem;
   transition: all 0.3s;
 }
+
 .quantity-btn:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.quantity-btn:active {
+  transform: scale(0.9);
+}
+.hidden-table-line {
+  display: none;
 }

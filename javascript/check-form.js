@@ -198,37 +198,39 @@ export function checkFormFeature() {
 
   function isValid() {
     let validName = true,
-      validEmail = true,
+      validEmail = false,
       validPass = true,
       validGender = true,
       validHobbies = true,
       validNational = true,
       validComment = true;
 
-    const name = document.querySelector("#name");
-    validName = !isEmpty(name, "input");
+    validName = !isEmpty(document.querySelector("#name"), "input");
 
-    const email = document.querySelector("#email");
-    if (!isEmpty(email, "input"))
-      validEmail = !isValidEmail(email, "emailValid");
+    if (!isEmpty(document.querySelector("#email"), "input"))
+      validEmail = !isValidEmail(
+        document.querySelector("#email"),
+        "emailValid"
+      );
 
-    const password = document.querySelector("#password");
-    validPass = !isEmpty(password, "input");
+    validPass = !isEmpty(document.querySelector("#password"), "input");
 
-    const selectedOption =
-      document.querySelector('input[name="size"]:checked')?.id || null;
-    validGender = !isEmpty(selectedOption, "gender");
-
-    const checkboxes = document.querySelectorAll(
-      '.checkboxes input[type="checkbox"]:checked'
+    validGender = !isEmpty(
+      document.querySelector('input[name="size"]:checked')?.id || null,
+      "gender"
     );
-    validHobbies = !isEmpty(checkboxes, "checkboxes");
 
-    const national = document.getElementById("national");
-    validNational = !isEmpty(national.value, "national");
+    validHobbies = !isEmpty(
+      document.querySelectorAll('.checkboxes input[type="checkbox"]:checked'),
+      "checkboxes"
+    );
 
-    const comment = document.querySelector(".comment");
-    validComment = !limitChar(comment, "comment");
+    validNational = !isEmpty(
+      document.getElementById("national").value,
+      "national"
+    );
+
+    validComment = !limitChar(document.querySelector(".comment"), "comment");
 
     return (
       validName &&
@@ -277,8 +279,6 @@ export function checkFormFeature() {
     ".form-container.sign-up-container"
   );
   const logInForm = document.querySelector(".form-container.sign-in-container");
-  // const loginBtn = document.querySelector(".btn.btn--medium.btn--red.login-btn");
-  // loginBtn.addEventListener("click", checkForm);
   signupForm.addEventListener("submit", checkForm);
   logInForm.addEventListener("submit", checkFormLgin);
 }

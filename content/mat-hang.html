@@ -23,7 +23,7 @@
     <link rel="manifest" href="../imgs/logo/site.webmanifest" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/product-list.css" />
-    <title>Giỏ hàng</title>
+    <title>Bán hàng</title>
   </head>
   <body>
     <h1 class="product-heading">bán hàng</h1>
@@ -38,13 +38,15 @@
         <option value="lt50">< 50</option>
         <option value="100-200">100 - 200</option>
         <option value="200-300">200 - 300</option>
-        <option value="gt200">> 200</option>
+        <option value="gt300">> 300</option>
       </select>
     </div>
 
     <div class="products-container">
       <div class="table-line">
-        <div class="item">1</div>
+        <div class="item">
+          <button class="choiseBtn select-all button-checked"></button>
+        </div>
         <div class="item">Hàng hoá</div>
         <div class="item">Đơn giá</div>
         <div class="item">Số lượng</div>
@@ -53,87 +55,168 @@
 
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
         <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
+        <div class="item product-base-price">199</div>
         <div class="item quantity-field">
           <button class="dec-quantity quantity-btn">-</button>
-          <input type="number" class="input-quantity" />
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+            disabled="true"
+          />
           <button class="inc-quantity quantity-btn">+</button>
         </div>
-        <div class="item">199</div>
+        <div class="item product-total-price"></div>
       </div>
 
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">St. Louis-Style Pizza</div>
+        <div class="item product-base-price">199</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
 
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Pizza bufalina</div>
+        <div class="item product-base-price">299</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
 
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Pizza e fichi</div>
+        <div class="item product-base-price">299</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
+
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Blueberry Crumble</div>
+        <div class="item product-base-price">30</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
+
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Sorbet</div>
+        <div class="item product-base-price">30</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
+
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Fugazza Lem</div>
+        <div class="item product-base-price">349</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
+
       <div class="table-line">
         <div class="item">
-          <button class="choiseBtn"></button>
+          <button class="choiseBtn button-checked"></button>
         </div>
-        <div class="item">Pizza alla pala</div>
-        <div class="item">199</div>
-        <div class="item">1</div>
-        <div class="item">199</div>
+        <div class="item">Detroit Trifle</div>
+        <div class="item product-base-price">349</div>
+        <div class="item quantity-field">
+          <button class="dec-quantity quantity-btn">-</button>
+          <input
+            type="number"
+            class="input-quantity"
+            value="1"
+            min="1"
+            max="99"
+          />
+          <button class="inc-quantity quantity-btn">+</button>
+        </div>
+        <div class="item product-total-price"></div>
       </div>
 
       <div class="table-line last-line">
         <div class="item">Tổng</div>
-        <div class="item">999</div>
+        <div class="item cart-total"></div>
       </div>
     </div>
   </body>
