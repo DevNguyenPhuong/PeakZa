@@ -1,8 +1,8 @@
 export function checkFormFeature() {
-  function renderError(element, name) {
+  function renderError(element, name, message) {
     if (name === "input") {
       const errorMessage = document.querySelector(`#${element.id} + p`);
-      errorMessage.textContent = "Hãy điền vào đây";
+      errorMessage.textContent = message;
       element.style.backgroundColor = "var(--yellow-200)";
       var style = document.createElement("style");
       style.innerHTML = `
@@ -16,7 +16,7 @@ export function checkFormFeature() {
     if (name === "gender") {
       const errorMessage = document.querySelector(`.gender-ratio-error.gender`);
       const group = document.querySelector(".input-group-ratio-gender");
-      errorMessage.textContent = "Hãy chọn giới tính";
+      errorMessage.textContent = message;
       group.style.backgroundColor = "var(--yellow-200)";
       return;
     }
@@ -27,7 +27,7 @@ export function checkFormFeature() {
         `.gender-ratio-error.gender-ratio-error-checkboxes`
       );
       const checkbox = document.querySelector(".checkboxes");
-      errorMessage.textContent = "Hãy chọn sở thích";
+      errorMessage.textContent = message;
       checkbox.style.backgroundColor = "var(--yellow-200)";
       return;
     }
@@ -37,7 +37,7 @@ export function checkFormFeature() {
         `.gender-ratio-error.gender-ratio-error-national`
       );
       const national = document.querySelector("#national");
-      errorMessage.textContent = "Hãy chọn quốc tịch";
+      errorMessage.textContent = message;
       national.style.backgroundColor = "var(--yellow-200)";
       return;
     }
@@ -47,13 +47,13 @@ export function checkFormFeature() {
         `.gender-ratio-error.gender-ratio-error-comment`
       );
       const comment = document.querySelector(".comment");
-      errorMessage.textContent = "Ghi chú quá dài ( > 200 )";
+      errorMessage.textContent = message;
       comment.style.backgroundColor = "var(--yellow-200)";
       return;
     }
     if (name === "emailValid") {
       const errorMessage = document.querySelector(`#${element.id} + p`);
-      errorMessage.textContent = "Email không hợp lệ";
+      errorMessage.textContent = message;
       element.style.backgroundColor = "var(--yellow-200)";
       var style = document.createElement("style");
       style.innerHTML = `
@@ -135,7 +135,7 @@ export function checkFormFeature() {
   function isEmpty(element, name) {
     if (name === "input") {
       if (element?.value === "") {
-        renderError(element, name);
+        renderError(element, name, "Hãy điền vào đây");
         return true;
       }
       deleteError(element, name);
@@ -144,7 +144,7 @@ export function checkFormFeature() {
 
     if (name === "gender") {
       if (element === null) {
-        renderError(element, name);
+        renderError(element, name, "Hãy chọn giới tính");
         return true;
       }
       deleteError(element, name);
@@ -156,7 +156,7 @@ export function checkFormFeature() {
         (checkbox) => checkbox.value
       );
       if (checkedValues.length === 0) {
-        renderError(element, name);
+        renderError(element, name, "Hãy chọn sở thích");
         return true;
       }
       deleteError(element, name);
@@ -165,7 +165,7 @@ export function checkFormFeature() {
 
     if (name === "national") {
       if (element === "none") {
-        renderError(element, name);
+        renderError(element, name, "Hãy chọn quốc tịch");
         return true;
       }
       deleteError(element, name);
@@ -178,7 +178,7 @@ export function checkFormFeature() {
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(email).toLowerCase())) {
-      renderError(element, name);
+      renderError(element, name, "Email không hợp lệ");
       return true;
     }
     deleteError(element, name);
@@ -188,16 +188,24 @@ export function checkFormFeature() {
   function limitChar(element, name) {
     if (name === "comment") {
       if (element.value.length > 200) {
-        renderError(element, name);
+        renderError(element, name, "Ghi chú quá dài ( > 200 )");
         return true;
       }
       deleteError(element, name);
       return false;
     }
+
+    if (name === "input") {
+      let isLimit = true;
+      if (element.value.length >= 5 && element.value.length <= 30) return false;
+      if (element.value.length < 5) renderError(element, name, "Tên quá ngắn");
+      if (element.value.length > 30) renderError(element, name, "Tên quá dài");
+      return isLimit;
+    }
   }
 
   function isValid() {
-    let validName = true,
+    let validName = false,
       validEmail = false,
       validPass = true,
       validGender = true,
@@ -205,7 +213,8 @@ export function checkFormFeature() {
       validNational = true,
       validComment = true;
 
-    validName = !isEmpty(document.querySelector("#name"), "input");
+    if (!isEmpty(document.querySelector("#name"), "input"))
+      validName = !limitChar(document.querySelector("#name"), "input");
 
     if (!isEmpty(document.querySelector("#email"), "input"))
       validEmail = !isValidEmail(

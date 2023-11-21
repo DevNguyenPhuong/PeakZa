@@ -18,6 +18,7 @@ init();
 
 /* -------------------------------------------- CART PRICE CALCULATING FEATURE ---------------------------------------------- */
 function updateCartTotalOnQuantityChange(input) {
+  if (input.value < 1) input.value = 1;
   const choiseBtn = input.closest(".table-line").querySelector(".choiseBtn");
   if (choiseBtn.classList.contains("button-checked")) updateCartTotal();
 }

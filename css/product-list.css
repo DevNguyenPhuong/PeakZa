@@ -126,6 +126,7 @@
 
 .input-quantity:disabled {
   cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .quantity-btn {
